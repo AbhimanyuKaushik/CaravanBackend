@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
 export const connectDB = async() => {
-        await mongoose.connect('mongodb+srv://Caravan:project123@cluster0.l8ms4op.mongodb.net/Caravan');
+        await mongoose.connect(process.env.MONGO_DB);
         console.log("DB Connected");
 }
