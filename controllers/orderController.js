@@ -8,7 +8,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 
 const placeOrder = async (req,res)=>{
 
-    const frontend_url = "http://localhost:3000";
+    const frontend_url = "https://caravan-frontend-d6jzk49qr-abhimanyu-kaushiks-projects.vercel.app";
 
     try {
         const newOrder = new orderModel({
